@@ -1,0 +1,100 @@
+header {
+    padding-left    : var(--paadCont);
+    padding-right   : var(--paadCont);
+    background-color: var(--navCor);
+    font-size       : 24px;
+    display         : flex;
+    justify-content : space-between;
+    height          : var(--heigtNav);
+
+    @media (max-width:600px) {
+        height: 60px;
+    }
+
+    #conjunt_logo {
+        ////// logo ///////
+        display: flex;
+        margin : 0px;
+        width  : var(--heigtNav);
+
+
+        img {
+            width     : 30px;
+            height    : 30px;
+            margin-top: 15px;
+        }
+
+        p {
+            margin-top : 0px;
+            line-height: 60px;
+            font-size  : 24px;
+            font-style : italic;
+        }
+
+    }
+
+    nav {
+        display: flex;
+
+        /////// Navegador /////
+        font-size: 24px;
+
+
+        a {
+
+            margin-left    : 40px;
+            text-decoration: none;
+            line-height    : var(--heigtNav);
+            text-align     : center;
+            color          : black;
+            transition     : all 1s;
+        }
+
+        a:hover {
+            background-color: var(--navCor_hover);
+        }
+
+        #btn_menu {
+            ///// botao menu reponsivo ////
+            display: none;
+
+            @media(max-width: 600px) {
+                display      : block;
+                width        : 30px;
+                height       : 20px;
+                margin-top   : 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .btn_ops_menu {
+
+            ///// botoes basicos do menu ////
+            @media(max-width: 600px) {
+                display: none;
+            }
+
+
+        }
+    }:hover {
+        @media (max-width: 600px) {
+            position       : relative;
+            margin-left    : 100%;
+            display        : block;
+            border-bottom: 2px solid black;
+            #btn_menu {
+                display: block;
+            }
+            .btn_ops_menu {
+                border-bottom   : 2px solid black;
+                display         : block;
+                background-color: var(--navCor);
+                z-index         : 100;
+                margin-left     : -440px;
+                width           : 370px;
+
+            }
+
+        }
+    }
+}
