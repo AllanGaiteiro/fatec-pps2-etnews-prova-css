@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>EtNews</title>
 </head>
 
@@ -19,17 +20,20 @@
                 <p>EtNews</p>
             </div>
             <nav>
-                <img id="btn_menu" src="images/Menu.png" alt="" srcset="">
-                <a class="btn_ops_menu" href="#">OVNIs</a>
-                <a class="btn_ops_menu" href="#">AREA 51</a>
-                <a class="btn_ops_menu" href="#">EVENTOS</a>
-                <a class="btn_ops_menu" href="#">UFOLOGIA</a>
+                <img id="btn_menu" src="images/Menu.png" onclick="Aparecer()">
+                <div class="nav">
+                    <a class="btn_ops_menu" href="#sect_Principal">OVNIs</a>
+                <a class="btn_ops_menu" href="#area51">AREA 51</a>
+                <a class="btn_ops_menu" href="#eventos">EVENTOS</a>
+                <a class="btn_ops_menu" href="#ufologia">UFOLOGIA</a>
+                </div>
+               
             </nav>
 
 
         </header>
         <main>
-            <div id="sect_Principal">
+            <section id="sect_Principal">
                 <img src="images/not1.jpg">
                 <article>
                     <h1>
@@ -41,33 +45,33 @@
                         'evidências', incluindo raios-X, que poderiam comprovar a veracidade de sua teoria.
                     </p>
                 </article>
-            </div>
-            <div id="sect_secundaria">
+            </section>
+            <aside id="sect_secundaria">
                 <div class="noticias">
                     <img src="images/ultimas-noticias.png">
                     <h2>últimas notícias</h2>
                 </div>
-                <div class="outros_assuntos">
-                    <article>
+                
+                    <article id="area51">
                         <img src="images/not2.jpg">
                         <p>
                             China pode assumir a liderança pela busca por ETs
                         </p>
                     </article>
-                    <article>
+                    <article id="eventos">
                         <img src="images/not3.jpg">
                         <p>
                             Grupo estuda supostos contatos entre humanos e ETs na América Latina
                         </p>
                     </article>
-                    <article>
+                    <article id="ufologia">
                         <img src="images/not4.jpg">
                         <p>
                             Jogador teria dito a Sampaoli que se atrasou em treino por ter sido sequestrado por ETs
                         </p>
                     </article>
-                </div>
-            </div>
+                
+            </aside>
         </main>
         <footer>
             <p>EtNews</p>
@@ -77,6 +81,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
